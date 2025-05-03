@@ -1,0 +1,249 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Gaps Game Styles */
+.gaps-container {
+  color: #fff;
+  background: #181818;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 16px auto 48px auto;
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', 'monospace';
+  box-shadow: 0 2px 24px 0 #000a;
+}
+.gaps-header {
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+.gaps-header h2 {
+  color: #b983ff;
+  font-size: 1.5rem;
+  margin: 0 0 0.25rem 0;
+  letter-spacing: 2px;
+}
+.gaps-subtitle {
+  color: #aaa;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.gaps-masked-title {
+  font-size: 2.2rem;
+  letter-spacing: 0.25em;
+  margin: 1.2rem 0 1rem 0;
+  word-break: break-word;
+  text-align: center;
+  font-family: inherit;
+  color: #fff;
+  min-height: 2.5em;
+}
+.gaps-clues-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-size: 1rem;
+  overflow-x: auto;
+}
+.gaps-clues-row b {
+  color: #b983ff;
+}
+.gaps-clue {
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+}
+.gaps-clue b {
+  color: #b983ff;
+}
+.gaps-input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.gaps-input {
+  width: 60%;
+  padding: 0.7em 1em;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border: 1.5px solid #b983ff;
+  background: #222;
+  color: #fff;
+  outline: none;
+  font-family: inherit;
+  transition: border 0.2s;
+}
+.gaps-input:focus {
+  border: 1.5px solid #fff;
+}
+.gaps-btn {
+  background: #b983ff;
+  color: #181818;
+  padding: 0.7em 1.5em;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.gaps-btn:disabled {
+  background: #444;
+  color: #aaa;
+  cursor: not-allowed;
+}
+.gaps-btn:not(:disabled):hover {
+  background: #a259ff;
+  color: #fff;
+}
+.gaps-guesses-left {
+  margin-top: 1.2rem;
+  color: #b983ff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.gaps-result {
+  margin-top: 1.2rem;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .gaps-container {
+    padding: 1rem 0.5rem 1.5rem 0.5rem;
+    max-width: 98vw;
+    margin: 16px auto;
+    border-radius: 8px;
+  }
+  .gaps-header h2 {
+    font-size: 0.95rem;
+  }
+  .gaps-subtitle {
+    font-size: 0.85rem;
+  }
+  .gaps-masked-title {
+    font-size: 1.05rem;
+    margin: 1.2rem 0 1rem 0;
+    min-height: 1.5em;
+    letter-spacing: 0.12em;
+  }
+  .gaps-clues-row {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    align-items: flex-start;
+  }
+  .gaps-clue {
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .gaps-input-row {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .gaps-input {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.5em 0.7em;
+  }
+  .gaps-btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.5em 0;
+  }
+  .gaps-guesses-left {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+  }
+  .gaps-result {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.gaps-input-error {
+  border: 2px solid #ff4d4f !important;
+  background: #2a1818 !important;
+  color: #fff;
+  transition: border 0.2s, background 0.2s;
+}
+
+.gaps-guesses-list {
+  margin-top: 1.5rem;
+  background: none;
+  padding: 0;
+}
+.gaps-guesses-title {
+  color: #aaa;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+.gaps-guess-row {
+  background: #222;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  margin-bottom: 0.3em;
+  border-radius: 4px;
+  text-align: left;
+  letter-spacing: 0.02em;
+}
+.gaps-guess-skip {
+  background: #444;
+  color: #fff;
+  font-style: italic;
+  font-family: inherit;
+}
